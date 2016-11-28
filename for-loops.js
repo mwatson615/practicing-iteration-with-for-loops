@@ -38,15 +38,27 @@ var antSpecies = {
   carpenter: {},
   crazy: {},
   fire: {},
-  glider: {},
+  glider: 4,
   honeyPot: {},
   jackJumper: {}
 }
 
-for (var i = 0; i < antSpecies.length; i++) {
-	console.log(antSpecies[i]);
+for (var i in antSpecies) {
+	console.log("Species are " + i + antSpecies[i])
 }
 
-
+/* Output
+Species are argentine[object Object]
+VM441:2 Species are army[object Object]
+VM441:2 Species are bigHeaded[object Object]
+VM441:2 Species are black[object Object]
+VM441:2 Species are bull[object Object]
+VM441:2 Species are carpenter[object Object]
+VM441:2 Species are crazy[object Object]
+VM441:2 Species are fire[object Object]
+VM441:2 Species are glider4
+VM441:2 Species are honeyPot[object Object]
+VM441:2 Species are jackJumper[object Object]
+ */
 
 
